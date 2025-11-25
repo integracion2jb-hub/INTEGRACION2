@@ -3,7 +3,7 @@ from enum import Enum
 from datetime import datetime
 
 
-servicio_yag = yagmail.SMTP("integracion2jb@gmail.com","zxyj wivq bchn mbgt")
+servicio_yag = yagmail.SMTP("cualquiercorreo@gmail.com","CLAVE APLICACION CORREO")
 
 class SUBJECTS (str, Enum):
     LOGS = "Informe de análisis de logs - Sistema Automatizado"
@@ -45,4 +45,5 @@ def enviarMail(email: str, resultados, subject: SUBJECTS ):
         print(f"Email enviado hacia el correo: {email}")
 
     return "Error correo no enviado"
+
 
