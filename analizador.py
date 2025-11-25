@@ -10,7 +10,7 @@ API_KEY = "aqui va la api key"
 client = OpenAI(api_key=API_KEY)
 
 # RUTA DE LOS LOGS (en server central)
-LOGS_DIR =  "./LOGS"  #"/var/log/central-logs/"
+LOGS_DIR = "/var/log/central-logs/"
 
 
 # ELIMINAR REGISTROS QUE SOBREPASEN LOS 3 MESES (COMO REQUERIMIENTO DE GUARDADO HISTORICO)
@@ -155,3 +155,4 @@ if __name__ == "__main__":
     resultados = analizar_logs()
     enviarMail("bayledog12@gmail.com", resultados, SUBJECTS.LOGS)
    
+
